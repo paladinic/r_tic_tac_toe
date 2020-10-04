@@ -31,8 +31,16 @@ indexes = list(
 move = function(board,cell,player){
   cat(player,"\n")
 
+
+  if(any(is.na(c(cell$row,cell$col)))){
+    return(list(board = board,
+                player = player,
+                message = "either row or col are missing",
+                game_over = F))
+  }
+
   # if move out of bounds
-  if(any(c(cell$row,cell$col)>3) | any(length(c(cell$row,cell$col))==0)){
+  if(any(c(cell$row,cell$col)>3)){
     return(list(board = board,
          player = player,
          message = "move out of 3x3 bounds",
