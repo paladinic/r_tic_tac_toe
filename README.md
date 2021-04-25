@@ -1,4 +1,4 @@
-# Tic-Tac-Toe in R
+# Tic-Tac-Toe in R (ttt)
 ### A simple interface to tic-tac-toe
 #### Installation:
 `devtools::install_github("paladinic/r_tic_tac_toe")`
