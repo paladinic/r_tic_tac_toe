@@ -39,3 +39,13 @@ __________________
 3  #  #  #
 
 ```
+...
+#### Game end:
+```
+player  x  won
+  c1 c2 c3
+1  x  o  x
+2  o  o  x
+3  #  #  x
+GAME OVER
+```
